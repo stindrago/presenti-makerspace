@@ -6,5 +6,6 @@ set -a
 set +a
 touch resources/data.yaml
 lein deps
-lein uberjar
-java -jar ./target/uberjar/presenti-makerspace-0.1.0-SNAPSHOT-standalone.jar
+lein run
+#lein uberjar
+#java -jar ./target/uberjar/presenti-makerspace-0.1.0-SNAPSHOT-standalone.jar
