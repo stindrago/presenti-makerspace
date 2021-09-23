@@ -75,6 +75,24 @@ pm2 ls # lista processi.
 pm2 0 # log del processo.
 ```
 
+## Troubleshooting
+
+### Il bot risponde solo a `/start`
+
+Verifica che l'`ID` della chat con il bot sia presente in [core.clj](./src/presenti_makerspace/core.clj). Aggiungi un nuovo `<CHAT ID>`.
+
+```clojure
+(def whitelist #{<CHAT ID 1> <CHAT ID 2>})
+```
+
+Per conoscere la `CHAT ID` avvia il bot e copia il numero in `:id`.
+
+```
+Bot joined new chat:  {:id 703914890, ...}
+```
+
+[isseu #6](https://gitlab.com/pdpfsug/proj/presenti-makerspace/-/issues/6)
+
 ## [Missing Features](https://gitlab.com/pdpfsug/proj/presenti-makerspace/-/issues?label_name%5B%5D=feature-request)
 
 - Rimozione di una persona.
