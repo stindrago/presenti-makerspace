@@ -52,6 +52,13 @@ lein run
 java -jar ./target/uberjar/presenti-makerspace-0.1.0-SNAPSHOT-standalone.jar
 ```
 
+## [Missing Features](https://gitlab.com/pdpfsug/proj/presenti-makerspace/-/issues?label_name%5B%5D=feature-request)
+
+- Rimozione di una persona.
+- Rimozione di una presenza.
+- Descrizione della presenza.
+- Esportazione CSV compatibile con i programmi foglio di calcolo.
+
 ## [License](./LICENSE)
 
 The Unlicensed
