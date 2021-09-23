@@ -6,19 +6,19 @@ Il database e' in `.yaml`.
 
 ## Comands
 
-Aggiungi una nuova persona
+Aggiungi una nuova persona.
 
 ```
 /persona Isaac Asimov
 ```
 
-Aggiungi un nuovo giorno di presenza
+Aggiungi un nuovo giorno di presenza.
 
 ```
 /presenza Isaac Asimov 2021-09-21
 ```
 
-Esporta i dati
+Esporta i dati.
 
 ```
 /export
@@ -34,7 +34,7 @@ Esporta i dati
 
 1. Assicurati di aver installato le dipendenze.
 1. Aggiungi il [bot token](https://core.telegram.org/bots) in `token.env`.
-1. Esegui lo script `init.sh` fa tutto in automatico
+1. Esegui lo script `init.sh` fa tutto in automatico.
 
 ``` shell
 sh init.sh
@@ -48,8 +48,31 @@ lein run
 
 ## Deploy
 
+Di seguito trovi due modi per fare avviare l'app.
+
+### Shell
+
+Per avviare l'app da shell.
+
 ``` shell
+export TELEGRAM_TOKEN="<TOKEN>"
 java -jar ./target/uberjar/presenti-makerspace-0.1.0-SNAPSHOT-standalone.jar
+```
+
+### PM2
+
+Se vuoi usare [PM2](https://pm2.keymetrics.io/docs/usage/quick-start/) per facilitarti la gestione dei processi.
+
+```shell
+export TELEGRAM_TOKEN="<TOKEN>"
+pm2 start java -jar ./target/uberjar/presenti-makerspace-0.1.0-SNAPSHOT-standalone.jar
+```
+
+Comandi PM2 utili.
+
+```shell
+pm2 ls # lista processi.
+pm2 0 # log del processo.
 ```
 
 ## [Missing Features](https://gitlab.com/pdpfsug/proj/presenti-makerspace/-/issues?label_name%5B%5D=feature-request)
