@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/presenti--makerspace%200.1.0--snapshot-alpha-blue?style=for-the-badge)
+
 # Presenti Makerspace
 
 Un BOT Telegram per segnare le presenze al makerspace.
